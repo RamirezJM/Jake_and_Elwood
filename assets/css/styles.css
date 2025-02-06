@@ -5,11 +5,7 @@
   font-family: "Montserrat", serif;
 }
 
-header{
-  background-image: url('../images/hero-bg.jpg');
-  background-position: center;
-  background-size: cover;
-}
+
 .logo{
   background-color: #FFE600;
   border-top: #FFE600 solid 20px;
@@ -19,6 +15,7 @@ nav{
   flex-wrap: wrap;
   justify-content: space-between;
   padding-inline: 1em;
+  background-color: #000;
 }
 .nav-links{
   display: none;
@@ -52,18 +49,23 @@ nav{
 }
 
 .hero{
-  max-width: 70%;
+  
   padding: 1em;
+  background-image: url('../images/hero-bg.jpg');
+  background-position: center;
+  background-size: cover;
 }
 .hero h1{
   color: #fff;
   font-size: 1.5rem;
   padding-block: 1em;
+  max-width: 70%;
 }
 .hero p{
   color: #fff;
   font-size: 1.1rem;
   padding-block: 1em;
+  max-width: 70%;
 }
 .hero span{
   color: #FFE600;
@@ -108,6 +110,106 @@ footer{
 .footer-text{
   opacity: .37;
 }
+
+/**** about us *****/
+
+.about-us-container{
+
+  margin-top: 2em;
+}
+
+.about-us-container img{
+  width: 100%;
+  box-shadow: 5px 5px #000, 10px 10px #FFE600;
+  margin-block: 2em;
+  
+}
+.about-us-title{
+  font-size: 3rem;
+  line-height: .4;
+  border-bottom: #FFE600 solid 30px;
+  margin-top: 1em;
+}
+
+.about-us-subtitle{
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-block: 1em;
+}
+.about-us-secondary-title{
+  font-size: 1.2rem;
+  margin-block: 1em;
+}
+.about-us-text{
+  font-size: 1rem;
+  margin-block: 1em;
+}
+
+/**** contact *****/
+
+.contact-container{
+  margin-top: 2em;
+}
+.contact-title{
+  font-size: 3rem;
+  line-height: .4;
+  border-bottom: #FFE600 solid 30px;
+  margin-top: 1em;
+}
+.contact-container img{
+  width: 100%;
+  box-shadow: 5px 5px #000, 10px 10px #FFE600;
+  margin-block: 2em;
+  
+}
+.contact-subtitle{
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-block: 1em;
+}
+.contact-secondary-title{
+  font-size: 1.2rem;
+  margin-block: 1em;
+}
+.contact-secondary-title span{
+  border-bottom: #FFE600 2px solid;
+  padding-block: .5em;
+}
+.contact-text{
+  font-size: 1rem;
+  margin-block: 1em;
+}
+.contact-text span{
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.contact-form label{
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-block: .5em;
+  width: 100%;
+}
+.contact-form input{
+  width: 100%;
+  line-height: 2;
+}
+.contact-form textarea{
+  width: 100%;
+  height: 10em;
+}
+.contact-form button{
+  float: right;
+  background-color: #FFE600;
+  font-size: .9rem;
+  padding: 1em 3em;
+  margin-block: 1em;
+  font-weight: 700;
+  border: none;
+
+}
+
 
 
 @media (min-width:600px){
