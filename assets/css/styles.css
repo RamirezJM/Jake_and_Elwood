@@ -32,7 +32,7 @@ nav{
   color: #fff;
   font-weight: 600;
   text-decoration: none;
-  border-bottom: #FFE600 2px solid;
+  
   
 }
   
@@ -40,6 +40,8 @@ nav{
 
 .nav-links.active{
   display: flex;
+  border: #FFE600 3px solid;
+  padding: 2em;
   
 }
 .menu-btn{
@@ -59,13 +61,13 @@ nav{
   color: #fff;
   font-size: 1.5rem;
   padding-block: 1em;
-  max-width: 70%;
+  max-width: 65%;
 }
 .hero p{
   color: #fff;
   font-size: 1.1rem;
   padding-block: 1em;
-  max-width: 70%;
+  max-width: 65%;
 }
 .hero span{
   color: #FFE600;
@@ -81,6 +83,10 @@ nav{
   margin-block: 1em;
 }
 main{
+  width: 80%;
+  margin: 0 auto;
+}
+.landing-main{
   display: grid;
   grid-template-columns: 1fr;
   width: 70%;
@@ -99,13 +105,17 @@ footer{
   padding: 2em;  
 }
 .footer-content{
-  display: flex;
+/*   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 1.5em;
   width: 70%;
-  margin: 0 auto;
+  margin: 0 auto; */
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  row-gap: 2em;
 }
 .footer-text{
   opacity: .37;
@@ -212,7 +222,83 @@ footer{
 
 
 
-@media (min-width:600px){
+@media (min-width:650px){
+  .hero{
+    padding-inline: 2em;
+  }
+  
+  .hero h1, .hero p{
+    max-width: 50%;
+  }
+  .menu-btn{
+    display: none;
+  }
+  nav{
+    flex-wrap: nowrap;
+    padding-inline: 2em;
+  }
 
+  .nav-links{
+    display: flex;
+    flex-direction: row;
+  }
+  .landing-main{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 80%;
+  }
+
+ .footer-content{
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: .5em;
+  justify-items: start;
+ }
+ .contact-logo{
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  justify-self: center;
+ }
+.footer-text .title{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+} 
+.footer-text .paragraph{
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+ 
+ .copyright{
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  align-self: center;
+  
+ }
+ 
+ .about-us-title{
+  margin: 0 auto;
+  max-width: fit-content;
+  
+ }
+ .about-us-subtitle{
+  margin: 0 auto;
+  max-width: 60%;
+  border-bottom: #000 solid 2px;
+  padding-block: 1em;
+ }
+ .about-us-content{
+  width: 100%;
+  display: flex;
+  gap: 2em;
+ }
+ .about-us-image{
+  flex-basis: 40%;
+  align-self: flex-start;
+  
+ }
+ .about-us-content-text{
+ flex-basis: 60%;
+  
+ }
 
 }
