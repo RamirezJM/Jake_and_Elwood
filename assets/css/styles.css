@@ -92,10 +92,10 @@ main{
   width: 80%;
   margin: 0 auto;
 }
-.landing-main{
+.main-content{
   display: grid;
   grid-template-columns: 1fr;
-  width: 70%;
+  width: 100%;
   row-gap: 2em;
   margin: 0 auto;
 }
@@ -108,7 +108,7 @@ main{
 footer{
   background-color: #EBEBEB;
   margin-top: 3em;
-  padding: 2em;  
+   
 }
 .footer-content{
 
@@ -116,6 +116,9 @@ footer{
   grid-template-columns: 1fr;
   justify-items: center;
   row-gap: 2em;
+  width: 80%;
+  margin: 0 auto;
+  padding-block: 2em;
 }
 .footer-text{
   opacity: .37;
@@ -259,10 +262,10 @@ footer{
     align-items: center;
     
   }
-  .landing-main{
+  .main-content{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-    width: 80%;
+    
   }
 
  .footer-content{
@@ -270,11 +273,13 @@ footer{
   grid-template-rows: 1fr 1fr 1fr;
   gap: .5em;
   justify-items: start;
+  width: 80%;
+  margin: 0 auto;
  }
  .contact-logo{
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  justify-self: center;
+  justify-self: end;
  }
 .footer-text .title{
   grid-column: 1 / 2;
@@ -302,22 +307,8 @@ footer{
 }
 
 @media (min-width:950px){
-  .contact-content{
-    display: flex;
-    gap: 2em;
-   } 
-  .contact-text{
-    flex: 1;
-    align-self: stretch;
-   }
-  .contact-form{
-    flex: 2;
-  }
-  /* .about-us-title{
-    margin: 0 auto;
-    max-width: fit-content;
-    
-   } */
+  
+ 
    .about-us-subtitle{
     margin: 0 auto;
     max-width: 60%;
@@ -338,40 +329,27 @@ footer{
    flex-basis: 60%;
     
    }
-   /* .contact-form{
+   .contact-content{
+    display: flex;
+    gap: 2em;
+    width: 80%;
+    margin: 0 auto;
+   } 
+  .contact-text{
+    flex: 1;
+    
+   }
+  
+   .contact-form{
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    flex: 2;
    }
-   .name, .password{
-    line-height: 2;
-    
-   }
-   .contact-form input, textarea{
-    margin-block: 0;
-   }
-
-   .contact-form .message{
+   .message{
     grid-column: span 2;
-    
    }
    .contact-form button{
     grid-column: 2 / 3;
     justify-self: end;
-   }*/
-   .contact-content{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    column-gap: 2rem;
-    margin-block: 5em;
-   }
-   .email{
-    grid-column: 3 / 4;
-   }
-   .contact-form{
-    grid-column: 2 / 4;
-    
-   }
-   .contact-form button{
-    grid-column: 3 / 4;
    }
 } 
