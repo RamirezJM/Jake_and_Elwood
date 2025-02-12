@@ -1,3 +1,5 @@
+
+/*/////  menu  /////// */
 const menuButton = document.querySelector('.menu-btn')
 const navLinks = document.querySelector('.nav-links')
 
@@ -6,6 +8,8 @@ menuButton.addEventListener('click', () => {
   menuButton.setAttribute('aria-expanded', navLinks.classList.contains('active'))
 
 })
+
+/*//////   active page  ///// */
 
 const currentPage = window.location.pathname
 const menuLinks = document.querySelectorAll('nav ul li a')
