@@ -7,3 +7,8 @@ https://ramirezjm.github.io/Jake_and_Elwood/
 ![Static Badge](https://img.shields.io/badge/HTML5-%23f06529)
 ![Static Badge](https://img.shields.io/badge/CSS3-%232965f1)
 ![Static Badge](https://img.shields.io/badge/Javascript-%23f0db4f)
+
+<div>
+    <img src="./screenshot.jpg" width="500"img> 
+</div>
+
